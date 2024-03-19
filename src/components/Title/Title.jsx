@@ -31,8 +31,8 @@ const Title = () => {
         </div>
       </div>
       <p>
-        Precio minuto a minuto en pesos argentinos del usdt en diferentes
-        exchanges
+        Precio minuto a minuto del usdt en diferentes exchanges, en pesos
+        argentinos 🇦🇷
       </p>
     </div>
   );
