@@ -1,7 +1,6 @@
 import React from "react";
 
 const TablePriceItem = ({ item, index }) => {
-  let dif = (((item.buy - item.sell) / item.sell) * 100).toFixed(2);
   return (
     <tr
       key={item.id}
@@ -21,16 +20,16 @@ const TablePriceItem = ({ item, index }) => {
       <td className="text-start">${item.buy}</td>
       <td
         className={
-          dif > 2 && dif <= 4
+          item.dif > 2 && item.dif <= 4
             ? "text-yellow-400"
-            : dif > 4 && dif <= 7
+            : item.dif > 4 && item.dif <= 7
             ? "text-orange-400"
-            : dif > 7
+            : item.dif > 7
             ? "text-red-400"
             : "text-green-400"
         }
       >
-        {dif}%
+        {item.dif}%
       </td>
       <td className="text-start">${item.sell}</td>
     </tr>
