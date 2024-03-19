@@ -28,7 +28,7 @@ function App() {
           </section>
         </div>
       </main>
-      <footer className="w-full bg-black min-h-24 text-white flex flex-col justify-center items-center gap-2">
+      <footer className="w-full bg-black min-h-32 text-white flex flex-col justify-center items-center gap-2">
         <p className="text-sm font-thin">Copyright © {year}</p>
         <p>
           Creado por{" "}
