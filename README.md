@@ -1,3 +1,12 @@
+
+# Precio USDT
+
+Proyecto para saber el precio del usdt en pesos argentinos desde diferentes exchanges.
+
+## Api utilizada (CrytoYa)
+
+    https://criptoya.com/api/usdt/ars/1
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
