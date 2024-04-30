@@ -29,7 +29,7 @@ export async function getData() {
           100
         ).toFixed(2),
       },
-      {
+      /* {
         id: 3,
         exchange: "Cocos Crypto",
         link: "https://cocos.capital/",
@@ -41,7 +41,7 @@ export async function getData() {
             data.cocoscrypto.totalBid) *
           100
         ).toFixed(2),
-      },
+      }, */
       {
         id: 4,
         exchange: "Belo",
