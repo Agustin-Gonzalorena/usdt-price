@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <BgAnimated />
-      <main className="w-full min-h-[80vh] flex justify-center">
-        <div className="w-full mb-10 md:max-w-2xl lg:max-w-4xl mt-10 min-h-60 bg-[#242424e0] p-5 shadow-black shadow-lg">
+      <main className="w-full min-h-[80vh] flex justify-center items-center">
+        <div className="w-full mb-10 md:max-w-2xl lg:max-w-4xl mt-10 m-h-60 bg-[#242424e0] p-5 shadow-black shadow-lg">
           <Title />
           <TablePrice />
           <section className="w-full text-center text-white font-light text-sm p-5">
