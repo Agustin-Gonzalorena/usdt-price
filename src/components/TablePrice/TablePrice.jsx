@@ -2,23 +2,26 @@ import React, { useEffect, useState } from "react";
 import { getData } from "../../utils/feching";
 import TablePriceItem from "../TablePriceItem/TablePriceItem";
 import TableThead from "../TableThead/TableThead";
+import { changeOrderBuy } from "../../utils/filters";
 
 const TablePrice = () => {
   const [dataArray, setDataArray] = useState([]);
   const [newOrder, setNewOrder] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [orderActive, setOrderActive] = useState("buyAsc");
+  const [orderActive, setOrderActive] = useState("buyDesc");
 
   useEffect(() => {
     if (newOrder.length == 0) {
       setNewOrder(dataArray);
     }
   }, [dataArray, newOrder]);
+
   useEffect(() => {
     if (!dataArray.length > 0) {
       getData().then((data) => {
         setDataArray(data);
         setLoading(false);
+        changeOrderBuy({ newOrder: data, setNewOrder, setOrderActive });
       });
     }
     const interval = setInterval(() => {

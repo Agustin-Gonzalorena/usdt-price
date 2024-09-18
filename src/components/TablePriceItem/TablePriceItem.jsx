@@ -26,6 +26,8 @@ const TablePriceItem = ({ item, index }) => {
             ? "text-orange-400"
             : item.dif > 7
             ? "text-red-400"
+            : item.dif < 0
+            ? "text-green-200"
             : "text-green-400"
         }
       >

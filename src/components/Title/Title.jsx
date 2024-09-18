@@ -11,7 +11,10 @@ const Title = () => {
           timeZone: "America/Argentina/Buenos_Aires",
         })
       );
-      setTime(`  ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`);
+      const hours = String(date.getHours()).padStart(2, "0");
+      const minutes = String(date.getMinutes()).padStart(2, "0");
+      const seconds = String(date.getSeconds()).padStart(2, "0");
+      setTime(`  ${hours}:${minutes}:${seconds}`);
     }, 1000);
     return () => clearInterval(interval);
   }, []);
@@ -23,7 +26,7 @@ const Title = () => {
           <img src="/usdt.svg" alt="icon" className="size-9" />
           USDT
         </h1>
-        <div className="md:w-44">
+        <div className="md:w-44 flex flex-col text-center">
           <p className="text-lg">
             <span className="hidden md:inline-block">Hora actual: </span>
             <span className="text-xl"> {time}</span>
